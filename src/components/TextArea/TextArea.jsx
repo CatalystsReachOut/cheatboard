@@ -1,14 +1,14 @@
 import React from 'react'
 
-const TextArea = ({value, onChange}) => {
+const TextArea = ({value, onChange, className, placeholder}) => {
   return (
     <div>
         <textarea
         onChange={(e)=>{onChange(e)}}
         value={value}
-        cols="30" 
         rows="10"
-        className='border-[#D03EDD] focus:outline-[#D03EDD]'
+        className={`border-2  focus:border-[#822C8F] focus:outline-none  ${className}`}
+        placeholder={placeholder}
         ></textarea>
     </div>
   )
