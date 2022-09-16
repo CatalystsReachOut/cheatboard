@@ -5,6 +5,6 @@ const router=express.Router();
 import { fetchTextFromCode, generateCheatcode } from "../controllers/cheatBoardController.js";
 
 router.route("/generateCode").get(generateCheatcode);
-router.route("/fetchCode").post(fetchTextFromCode);
+router.route("/generateCode").post(fetchTextFromCode);
 
 export default router;
