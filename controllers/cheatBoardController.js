@@ -33,13 +33,14 @@ export const generateCheatcode=bigPromise(async(req,res,next)=>{
 
     res.status(200).json({
         success:true,
-        message:"Text generated !"
+        message:"Text generated !",
+        code:cheatcode
     })
 })
 
 
 export const fetchTextFromCode=bigPromise(async(req,res,next)=>{
-    const { cheatcode } =req.body;
+    const { cheatcode } = req.query;
     if(!cheatcode){
         return res.status(400).json({
             success:false,
