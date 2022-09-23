@@ -4,6 +4,7 @@ import Button from '../../components/Button/Button'
 import TextArea from '../../components/TextArea/TextArea'
 import { FETCH_CODE } from '../../utils/apiConstants'
 import axios from 'axios'
+import Loader from '../../components/Loader/Loader'
 
 const Home = () => {
 
@@ -13,8 +14,11 @@ const Home = () => {
   const [getCode, setGetCode] = useState()
   const [data, setData] = useState()
 
+  const [loading, setLoading] = useState(0)
+
 
   const handleSubmit = async () => {
+    setLoading(1)
     if (!text) return alert('Text is required')
     const config = {
       method: 'post',
@@ -23,31 +27,36 @@ const Home = () => {
         text: text
       }
     }
-
+    
     await axios(config)
-      .then(res => {
-        console.log(res);
-        setGetCode(res.data.code)
-      })
-      .catch(err => {
+    .then(res => {
+      console.log(res);
+      setLoading(0)
+      setGetCode(res.data.code)
+    })
+    .catch(err => {
+        setLoading(0)
         alert(err)
         console.log(err);
       })
-  }
-
-  const handleGetData = async () => {
-    if (!code) return alert('Code is required to fetch data')
-    const config = {
-      method: 'get',
-      url: `${FETCH_CODE}?cheatcode=${code}`,
     }
-
-    await axios(config)
+    
+    const handleGetData = async () => {
+      if (!code) return alert('Code is required to fetch data')
+      setLoading(1)
+      const config = {
+        method: 'get',
+        url: `${FETCH_CODE}?cheatcode=${code}`,
+      }
+      
+      await axios(config)
       .then(res => {
+        setLoading(0)
         console.log(res);
         setData(res.data.data)
       })
       .catch(err => {
+        setLoading(0)
         alert(err)
         console.log(err);
       })
@@ -55,6 +64,7 @@ const Home = () => {
 
   return (
     <div className='Home font-poppins px-[20px] sm:px-[50px] max-w-[1000px] m-auto mt-[10px] py-1'>
+      <Loader loading={loading}/>
       <div className='p-5 my-3 bg-[white]'>
         <TextArea
           placeholder={'Enter Message Here'}

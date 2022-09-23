@@ -1,0 +1,25 @@
+.ll{
+
+    
+    
+.loader {
+    height: 100vh;
+    top: 0;
+    width: 100vw;
+    position: fixed;
+    background: white;
+    opacity: 0.5;
+    z-index: 999;
+    display: flex;
+    z-index: 99999;
+    align-items: center;
+  
+    span{
+      display: block;
+      margin: 0 auto;
+      border-color: var(--green);
+      left: calc(50% - 75px);
+      position: fixed;
+    }
+  }
+}
