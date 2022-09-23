@@ -1,3 +1,4 @@
+import { text } from "express";
 import mongoose from "mongoose";
 
 const cheatBoardSchema= new mongoose.Schema({
@@ -7,7 +8,17 @@ const cheatBoardSchema= new mongoose.Schema({
     },
     cheatcode:{
         type:Number
-    }
+    },
+    customcode:{
+        type:String,
+        minlength:1,
+        maxlength:6
+    },
+    expireAt: {
+        type: Date,
+        default: Date.now,
+        index: { expires: '2m' },
+      },
 },
     {timestamps:true}
 );
