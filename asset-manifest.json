@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/cheatboard/static/css/main.bed61676.css",
-    "main.js": "/cheatboard/static/js/main.6df532f1.js",
+    "main.css": "/cheatboard/static/css/main.1cca363a.css",
+    "main.js": "/cheatboard/static/js/main.dfcf670c.js",
     "static/media/cat.png": "/cheatboard/static/media/cat.515cadae1817d421529f.png",
     "index.html": "/cheatboard/index.html",
-    "main.bed61676.css.map": "/cheatboard/static/css/main.bed61676.css.map",
-    "main.6df532f1.js.map": "/cheatboard/static/js/main.6df532f1.js.map"
+    "main.1cca363a.css.map": "/cheatboard/static/css/main.1cca363a.css.map",
+    "main.dfcf670c.js.map": "/cheatboard/static/js/main.dfcf670c.js.map"
   },
   "entrypoints": [
-    "static/css/main.bed61676.css",
-    "static/js/main.6df532f1.js"
+    "static/css/main.1cca363a.css",
+    "static/js/main.dfcf670c.js"
   ]
 }
