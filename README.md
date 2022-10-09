@@ -1,7 +1,7 @@
 # CheatBoard
-In this case, we train our model with several medical informations such as the blood glucose level, insulin level of patients along with whether the person has diabetes or not so this act as labels whether that person is diabetic or non-diabetic so this will be label for this case.
+CheatBoard provides an easiest way to send data between internet connected devices. It provides a code that will be used by another person on another pc and can fetch data sent by first person.
 
-#### Diabetes Prediction App Link : [Click Here To Visit Website](https://sugar-prediction-app.herokuapp.com)<br>
+#### Cheatboard Web App Link : [Click Here To Visit Website](https://catalystsreachout.github.io/cheatboard/)<br>
 
 #### Sample Video :
 <h2 align="center">
@@ -11,23 +11,13 @@ In this case, we train our model with several medical informations such as the b
          width="850" />
 </h2>
 
-## Domain Understanding
-<p>In this case, we train our model with several medical informations such as the blood glucose level, insulin level of patients along with whether the person has diabetes or not so this act as labels whether that person is diabetic or non-diabetic so this will be label for this case. 
-So once, we feed this data to our support vector machine model. What happens is our model tries to plot the data in a graph.</p><br> 
-Once it plots the data, it tries to find a hyperplane so in this image you can see a hyper plane. So, what happens is that this hyperplane separates these two datas.
-Then once, we feed  new data to this model, it tries to put that particular data in either of these two groups. With that, it can predict whether the person will be diabetic or non-diabetic .
-Okay so in this case , we use several medical information such as bmi,blood glucose level, insulin level of patient and etc.<br>
+## Splash Screen
+<h2 align="center">
+    <img src="https://github.com/CatalystsReachOut/cheatboard/blob/client/splashscreen.gif" 
+         alt="Waving hand animated gif"
+         height=500"
+         width="850" />
+</h2>
 
-## Model Used (SVM)
-Support Vector Machine is one of the most popular Supervised Learning algorithms, which is used for Classification as well as Regression problems. 
-However, primarily, it is used for Classification problems in Machine Learning.
-The goal of the SVM algorithm is to create the best line or decision boundary that can segregate n-dimensional space into classes so that we can easily put the new data point in the correct category in the future. This best decision boundary is called a hyperplane.
-
-## Workflow
-![Workflow](https://github.com/CatalystsReachOut/Sugar-Prediction-Using-SVM/blob/main/WorkFlow.png)
-
-## App Interface
-![AppInterface](https://github.com/CatalystsReachOut/Sugar-Prediction-Using-SVM/blob/main/App%20Interface.png)
-
-## Conclusion
-![Conclusion](https://github.com/CatalystsReachOut/Sugar-Prediction-Using-SVM/blob/main/Conclusion.png)
+## Landing Page
+![landingpage](https://github.com/CatalystsReachOut/cheatboard/blob/client/landingpage.png)
